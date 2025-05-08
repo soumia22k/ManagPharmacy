@@ -25,6 +25,10 @@ public class ProduitController {
         return produitRepository.save(produit);
     }
 
+    @GetMapping("/produit")
+    public List<Produit> getAllProduits() {
+        return produitRepository.findAll();
+    }
 
 
 }
